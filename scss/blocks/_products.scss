@@ -1,0 +1,21 @@
+.products {
+    padding: 90px 0;
+
+    @include tablet {
+        padding: 60px 0;
+    }
+}
+
+.products__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    @include tablet {
+        row-gap: 60px;
+    }
+
+    @include mobile {
+        row-gap: 40px;
+    }
+}

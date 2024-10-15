@@ -1,0 +1,44 @@
+.partners {
+    padding: 90px 0;
+    background-color: #ebebeb;
+
+    @include tablet {
+        padding: 60px 0;
+    }
+}
+
+.partners__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include tablet {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    @include mobileXS {
+        display: none;
+    }
+
+}
+
+.partners__item {
+
+}
+
+.partners__link {
+    width: 255px;
+    height: 134px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c4c4c4;
+
+    @include mobile {
+        width: 240px;
+        height: 127px;
+    }
+
+}

@@ -1,0 +1,27 @@
+.slider {}
+
+.tns-outer {
+    display: none;
+
+    @include mobileXS {
+        display: block;
+    }
+}
+
+.slider__link {
+    padding: 0 15px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c4c4c4;
+
+    img {
+        max-width: unset;
+        object-fit: cover;
+    }
+}
+
+.tns-slide-active {
+    padding-left: 20px;
+}

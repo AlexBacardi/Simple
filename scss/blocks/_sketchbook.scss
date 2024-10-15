@@ -1,0 +1,85 @@
+.sketchbook {
+    padding-top: 90px;
+
+    @include tablet {
+        padding-top: 60px;
+    }
+
+    @include mobile {
+        padding-bottom: 60px;
+    }
+
+}
+
+.sketchbook__content {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+        gap: 30px;
+    }
+
+    @include mobile {
+        flex-direction: column-reverse;
+        row-gap: 10px;
+    }
+}
+
+.sketchbook__descr {
+    padding-top: 24px;
+    max-width: 350px;
+
+    @include tablet {
+        padding-top: 0;
+        max-width: 330px;
+    }
+
+    @include mobile {
+        max-width: 510px;
+    }
+}
+
+.sketchbook__title {
+    margin-bottom: 8px;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+    color: #666666;
+
+    @include tablet {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    @include mobile {
+        font-size: 24px;
+    }
+}
+
+.sketchbook__text {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #85859B;
+
+    @include mobile {
+        font-size: 16px;
+    }
+}
+
+.sketchbook__img {
+
+    @include tablet {
+        flex-shrink: 0;
+    }
+
+    @include mobile {
+        padding-left: 30px;
+    }
+
+    @include mobileXS {
+        padding-left: 0;
+    }
+
+
+}

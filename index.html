@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./libs/tiny-slider/tiny-slider.css">
+    <title>Simple</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="header__row">
+
+                <div class="header__logo">
+
+                    <a href="#!" class="logo">
+
+                        <img src="./img/logo/logo.svg" alt="Simple" width="140" height="23">
+                    </a>
+                </div>
+
+                <nav class="header__nav nav">
+
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Продукция</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Материалы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <button class="nav__btn" id="mobileNavOpen">
+                        <img src="./img/icons/mobile-menu.svg" alt="open / close menu">
+                    </button>
+
+                </nav>
+                <ul class="header__btns">
+                    <li>
+                        <button class="header__search" aria-label="search">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g stroke="currentColor">
+                                    <path d="M13 19C8.58172 19 5 15.4183 5 11C5 6.58172 8.58172 3 13 3C17.4183 3 21 6.58172 21 11C21 15.4183 17.4183 19 13 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3.0001 21L7.3501 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <a href="#!" class="header__login" aria-label="log in">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g stroke="currentColor">
+                                    <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10 17L15 12L10 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M15 12H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="mobile-nav">
+        <h2 class="visually-hidden">
+            Мобильная навигация
+        </h2>
+
+        <div class="mobile-nav__header">
+
+            <a href="#!" class="mobile-nav__logo logo">
+                <img src="./img/logo/logo.svg" alt="Coworks">
+            </a>
+
+        </div>
+        <div class="mobile-nav__body">
+
+            <div class="container">
+
+                <button class="mobile-nav__btn" id="mobileNavClose">
+                    <img src="./img/icons/close-menu.svg" alt="close mobile menu">
+                </button>
+
+                <ul class="mobile-nav-list">
+                    <li>
+                        <a href="#!">Продукция</a>
+                    </li>
+                    <li>
+                        <a href="#!">Материалы</a>
+                    </li>
+                    <li>
+                        <a href="#!">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#!">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+
+        <section class="promo">
+
+            <div class="container">
+
+                <div class="promo__row">
+
+                    <div class="promo__content">
+                        <h1 class="promo__title">
+                            Простые вещи. Из бумаги
+                        </h1>
+                        <p class="promo__descr">
+                            Бума́га (предположительно от итал. bombagia, первоисточником же считается иранский) — волокнистый материал с минеральными добавками.
+                        </p>
+                        <a href="#!" class="promo__btn btn">
+                            Каталог
+                        </a>
+                    </div>
+                    <div class="promo__img">
+                        <picture>
+
+                            <source srcset="./img/promo/promo-mobile-img.png, ./img/promo/promo-mobile-img@2x.png 2x" media="(max-width:767px)">
+                            <source srcset="./img/promo/promo-tablet-img.png, ./img/promo/promo-tablet-img@2x.png 2x" media="(max-width:1139px)">
+                            <img src="./img/promo/promo-img.png" alt="promo" width="540" height="560">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="results">
+
+            <div class="container">
+
+                <h2 class="visually-hidden">Результаты</h2>
+
+                <div class="results__row">
+
+                    <div class="result">
+
+                        <img src="./img/results/result-1.png" srcset="./img/results/result-1@2x.png 2x" alt="result image" class="result__img" width="160" height="118">
+
+                        <div class="result__descr">
+                            <h3 class="result__title">
+                                V.1
+                            </h3>
+
+                            <p class="result__text">
+                                Результат вашего обучения
+                            </p>
+                        </div>
+                    </div>
+                    <div class="result">
+
+                        <img src="./img/results/result-2.png" srcset="./img/results/result-2@2x.png 2x" alt="result image" class="result__img" width="160" height="118">
+
+                        <div class="result__descr">
+                            <h3 class="result__title">
+                                V.2
+                            </h3>
+
+                            <p class="result__text">
+                                Результат вашего обучения
+                            </p>
+                        </div>
+                    </div>
+                    <div class="result">
+
+                        <img src="./img/results/result-3.png" srcset="./img/results/result-3@2x.png 2x" alt="result image" class="result__img" width="160" height="118">
+
+                        <div class="result__descr">
+                            <h3 class="result__title">
+                                V.3
+                            </h3>
+
+                            <p class="result__text">
+                                Результат вашего обучения
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results__content">
+
+                    <div class="results__img">
+                        <picture>
+                            <source srcset="./img/results/results-tablet-img.png, ./img/results/results-tablet-img@2x.png 2x" media="(max-width:1139px)">
+                            <img src="./img/results/result-img.png" srcset="./img/results/result-img@2x.png 2x" alt="result img" width="730" height="564">
+                        </picture>
+                    </div>
+
+                    <div class="results__descr">
+                        <h3 class="results__title">
+                            Максимальная белизна
+                        </h3>
+
+                        <div class="results__text">
+                            <p>
+                                Для повышения белизны, гладкости и мягкости в состав бумажной массы вводят белые минеральные вещества: мел, тальк, каолин и др. Эта операция называется наполнением.
+                            </p>
+                            <p>
+                                Отлив бумажного листа осуществляют на бумагоделательной машине, важнейшей частью которой является непрерывно движущаяся (как транспортер) металлическая или капроновая сетка.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+
+            <div class="container">
+
+                <h2 class="visually-hidden">Наши продукты</h2>
+
+                <div class="products__cards">
+
+                    <article class="card">
+
+                        <div class="card__img">
+                            <picture>
+                                <source srcset="./img/products/card-1-mobileXs-img.png, ./img/products/card-1-mobileXs-img@2x.png 2x" media="(max-width:575px)">
+                                <source srcset="./img/products/card-1-mobile-img.png, ./img/products/card-1-mobile-img@2x.png 2x" media="(max-width:767px)">
+                                <source srcset="./img/products/card-1-tablet-img.png, ./img/products/card-1-tablet-img@2x.png 2x" media="(max-width:1139px)">
+                                <img src="./img/products/card-img-1.png" srcset="./img/products/card-img-1@2x.png 2x" alt="card img">
+                            </picture>
+                        </div>
+
+                        <div class="card__body">
+
+                            <h3 class="card__title">
+                                Упаковка
+                            </h3>
+
+                            <p class="card__print">
+                                Тираж: от 50 штук
+                            </p>
+
+                            <div class="card__descr">
+                                <p>
+                                    Сделано из крафт-бумаги или плотного картона. Упаковки имеют различные формы и расцветки, изготовим форму под заказ.
+                                </p>
+
+                            </div>
+
+                            <a href="#!" class="card__read-more">
+                                Подробнее 
+                                <svg width="21" height="15" viewBox="0 0 21 15" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.7071 8.20711C21.0976 7.81658 21.0976 7.18342 20.7071 6.79289L14.3431 0.428932C13.9526 0.0384078 13.3195 0.0384078 12.9289 0.428932C12.5384 0.819457 12.5384 1.45262 12.9289 1.84315L18.5858 7.5L12.9289 13.1569C12.5384 13.5474 12.5384 14.1805 12.9289 14.5711C13.3195 14.9616 13.9526 14.9616 14.3431 14.5711L20.7071 8.20711ZM0 8.5H20V6.5H0V8.5Z" fill="currentColor" />
+                                </svg></a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+
+                        <div class="card__img">
+                            <picture>
+                                <source srcset="./img/products/card-2-mobileXs-img.png, ./img/products/card-2-mobileXs-img@2x.png 2x" media="(max-width:575px)">
+                                <source srcset="./img/products/card-2-mobile-img.png, ./img/products/card-2-mobile-img@2x.png 2x" media="(max-width:767px)">
+                                <source srcset="./img/products/card-2-tablet-img.png, ./img/products/card-2-tablet-img@2x.png 2x" media="(max-width:1139px)">
+                                <img src="./img/products/card-img-2.png" srcset="./img/products/card-img-2@2x.png 2x" alt="card img">
+                            </picture>
+                        </div>
+
+                        <div class="card__body">
+
+                            <h3 class="card__title">
+                                Пакеты
+                            </h3>
+                            <p class="card__print">
+                                Тираж: от 200 штук
+                            </p>
+
+                            <div class="card__descr">
+                                <p>
+                                    С прямоугольным дном. От 10 см до 60 см по высоте. Материалы: картон, крафт-бумага. Различные расцветки и дизайн.
+                                </p>
+                            </div>
+                            <a href="#!" class="card__read-more">
+                                Подробнее
+                                <svg width="21" height="15" viewBox="0 0 21 15" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.7071 8.20711C21.0976 7.81658 21.0976 7.18342 20.7071 6.79289L14.3431 0.428932C13.9526 0.0384078 13.3195 0.0384078 12.9289 0.428932C12.5384 0.819457 12.5384 1.45262 12.9289 1.84315L18.5858 7.5L12.9289 13.1569C12.5384 13.5474 12.5384 14.1805 12.9289 14.5711C13.3195 14.9616 13.9526 14.9616 14.3431 14.5711L20.7071 8.20711ZM0 8.5H20V6.5H0V8.5Z" fill="currentColor" />
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+
+                        <div class="card__img">
+                            <picture>
+                                <source srcset="./img/products/card-3-mobileXs-img.png, ./img/products/card-3-mobileXs-img@2x.png 2x" media="(max-width:575px)">
+                                <source srcset="./img/products/card-3-mobile-img.png, ./img/products/card-3-mobile-img@2x.png 2x" media="(max-width:767px)">
+                                <source srcset="./img/products/card-3-tablet-img.png, ./img/products/card-3-tablet-img@2x.png 2x" media="(max-width:1139px)">
+                                <img src="./img/products/card-img-3.png" srcset="./img/products/card-img-3@2x.png 2x" alt="card img">
+                            </picture>
+                        </div>
+
+                        <div class="card__body">
+
+                            <h3 class="card__title">
+                                Кейсы
+                            </h3>
+                            <p class="card__print">
+                                Тираж: от 30 штук
+                            </p>
+
+                            <div class="card__descr">
+                                <p>
+                                    Подойдет для документов и других бумаг. Различные расцветки, размеры и плотность. Материал: прессованная бумага.
+                                </p>
+                            </div>
+                            <a href="#!" class="card__read-more">
+                                Подробнее
+                                <svg width="21" height="15" viewBox="0 0 21 15" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.7071 8.20711C21.0976 7.81658 21.0976 7.18342 20.7071 6.79289L14.3431 0.428932C13.9526 0.0384078 13.3195 0.0384078 12.9289 0.428932C12.5384 0.819457 12.5384 1.45262 12.9289 1.84315L18.5858 7.5L12.9289 13.1569C12.5384 13.5474 12.5384 14.1805 12.9289 14.5711C13.3195 14.9616 13.9526 14.9616 14.3431 14.5711L20.7071 8.20711ZM0 8.5H20V6.5H0V8.5Z" fill="currentColor" />
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+
+                        <div class="card__img">
+                            <picture>
+                                <source srcset="./img/products/card-4-mobileXs-img.png, ./img/products/card-4-mobileXs-img@2x.png 2x" media="(max-width:575px)">
+                                <source srcset="./img/products/card-4-mobile-img.png, ./img/products/card-4-mobile-img@2x.png 2x" media="(max-width:767px)">
+                                <source srcset="./img/products/card-4-tablet-img.png, ./img/products/card-4-tablet-img@2x.png 2x" media="(max-width:1139px)">
+                                <img src="./img/products/card-img-4.png" srcset="./img/products/card-img-4@2x.png 2x" alt="card img">
+                            </picture>
+                        </div>
+
+                        <div class="card__body">
+
+                            <h3 class="card__title">
+                                Другие изделия
+                            </h3>
+                            <p class="card__print">
+                                Тираж: от 100 штук
+                            </p>
+
+                            <div class="card__descr">
+                                <p>
+                                    Нестандартные упаковки, кейсы и другие изделия различных размеров и конфигураций. Изготовим в кратчайшие сроки.
+                                </p>
+                            </div>
+                            <a href="#!" class="card__read-more">
+                                Подробнее
+                                <svg width="21" height="15" viewBox="0 0 21 15" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.7071 8.20711C21.0976 7.81658 21.0976 7.18342 20.7071 6.79289L14.3431 0.428932C13.9526 0.0384078 13.3195 0.0384078 12.9289 0.428932C12.5384 0.819457 12.5384 1.45262 12.9289 1.84315L18.5858 7.5L12.9289 13.1569C12.5384 13.5474 12.5384 14.1805 12.9289 14.5711C13.3195 14.9616 13.9526 14.9616 14.3431 14.5711L20.7071 8.20711ZM0 8.5H20V6.5H0V8.5Z" fill="currentColor" />
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+
+            <div class="container">
+
+                <h2 class="visually-hidden">Наши партнеры</h2>
+
+                <ul class="partners__list">
+
+                    <li class="partners__item"><a href="#!" class="partners__link"><img src="./img/logo/hahnemuehle-logo.svg" alt="hahnemuehle logo"></a></li>
+
+                    <li class="partners__item"><a href="#!" class="partners__link"><img src="./img/logo/canson-logo.svg" alt="canson logo"></a></li>
+
+                    <li class="partners__item"><a href="#!" class="partners__link"><img src="./img/logo/royal-talens-logo.svg" alt="royal talens logo"></a></li>
+
+                    <li class="partners__item"><a href="#!" class="partners__link"><img src="./img/logo/fabriano.svg" alt="fabriano logo"></a></li>
+                </ul>
+
+            </div>
+
+            <div class="container container--mobile-no-padding">
+
+                <div class="slider">
+                    <div><a href="#!" class="slider__link"><img src="./img/logo/hahnemuehle-logo.svg" alt="hahnemuehle logo"></a></div>
+                    <div><a href="#!" class="slider__link"><img src="./img/logo/canson-logo.svg" alt="canson logo"></a></div>
+                    <div><a href="#!" class="slider__link"><img src="./img/logo/royal-talens-logo.svg" alt="royal talens logo"></a></div>
+                    <div><a href="#!" class="slider__link"><img src="./img/logo/fabriano.svg" alt="fabriano logo"></a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sketchbook">
+
+            <h2 class="visually-hidden">Скейчбук</h2>
+
+            <div class="container">
+
+                <div class="sketchbook__content">
+
+                    <div class="sketchbook__descr">
+
+                        <h3 class="sketchbook__title">
+                            Simple скетчбук
+                        </h3>
+
+                        <div class="sketchbook__text">
+                            <p>
+                                80 листов, твердая обложка, бумага Fabriano 200 г/м2. Подойдет и для графики и для акварели. Для самых смелых творческих замыслов!
+                            </p>
+                        </div>
+
+                        <a href="#!" class="btn">Купить</a>
+                    </div>
+
+                    <div class="sketchbook__img">
+                        <picture>
+                            <source srcset="./img/sketchbook/sketchbook-mobile.png, ./img/sketchbook/sketchbook-mobile@2x.png 2x" media="(max-width:767px)">
+                            <source srcset="./img/sketchbook/sketchbook-tablet.png, ./img/sketchbook/sketchbook-tablet@2x.png 2x" media="(max-width:1139px)">
+                            <img src="./img/sketchbook/sketchbook-img.png" srcset="./img/sketchbook/sketchbook-img@2x.png 2x" alt="sketchbook">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__top">
+
+            <div class="container">
+
+                <div class="footer__row">
+
+                    <a href="#!" class="footer__logo logo">
+                        <img src="./img/logo/logo-footer.svg" alt="Simple">
+                    </a>
+
+                    <div class="footer__social">
+
+                        <ul class="social__list">
+
+                            <li class="social__item"><a href="#!" class="social__link"><img src="./img/social/facebook.svg" alt="facebook"></a></li>
+
+                            <li class="social__item"><a href="#!" class="social__link"> <img src="./img/social/twitter.svg" alt="twitter"></a></li>
+
+                            <li class="social__item"><a href="#!" class="social__link"> <img src="./img/social/instagram.svg" alt="instagram"></a></li>
+
+                            <li class="social__item"><a href="#!" class="social__link"> <img src="./img/social/youtube.svg" alt="youtube"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+
+            <div class="container">
+
+                <div class="footer__copy">
+                    <p>Simple <span>®</span> 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./libs/tiny-slider/tiny-slider.js"></script>
+
+    <script src="./js/mobile-nav.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

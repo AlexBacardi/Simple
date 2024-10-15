@@ -1,0 +1,51 @@
+.footer {}
+
+.footer__top {
+    padding: 28px 0;
+    background-color: #4C5866;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include mobileXS {
+        justify-content: center;
+        row-gap: 40px;
+    }
+}
+
+.footer__logo {
+    position: relative;
+
+    @include mobileXS {
+        text-align: center;
+        width: 100%;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 44px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #DDDDDD;
+        }
+    }
+}
+
+.footer__social {}
+
+.footer__bottom {}
+
+.footer__copy {
+    padding: 3px 0;
+    font-size: 13px;
+    text-align: center;
+    color: #4C5866;
+
+    span {
+        color: #BCBCBC;
+    }
+}
